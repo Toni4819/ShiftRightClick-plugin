@@ -20,7 +20,7 @@ jobs:
         uses: ./.github/actions/setup-gradle
 
       - name: Build plugin
-        run: /gradlew clean shadowJar -x build
+        run: /gradlew clean shadowJar
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
