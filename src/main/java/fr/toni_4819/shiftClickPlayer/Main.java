@@ -6,6 +6,7 @@
 package fr.toni_4819.shiftClickPlayer;
 
 import fr.toni_4819.shiftClickPlayer.listeners.ShiftClickListener;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -13,6 +14,8 @@ public class Main extends JavaPlugin {
     }
 
     public void onEnable() {
+        int pluginId = 32801;
+        Metrics metrics = new Metrics(this, pluginId);
         this.saveDefaultConfig();
         this.getServer().getPluginManager().registerEvents(new ShiftClickListener(this), this);
         this.getLogger().info("ShiftClickPlayer enabled!");
