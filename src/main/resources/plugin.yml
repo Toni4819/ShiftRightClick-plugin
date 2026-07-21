@@ -1,0 +1,13 @@
+name: ShiftClickPlayer
+version: '1.0'
+
+main: fr.toni_4819.shiftClickPlayer.Main
+api-version: '1.21'
+
+authors: [ Toni_4819 ]
+website: https://toni4819.github.io/
+
+permissions:
+  shiftclick.use:
+    description: Permission to use shift-click actions
+    default: true
