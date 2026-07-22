@@ -33,11 +33,9 @@ public class ShiftClickListener implements Listener {
         }
 
         Entity target = event.getRightClicked();
-        if (!(target instanceof Player)) {
+        if (!(target instanceof Player clicked)) {
             return;
         }
-
-        Player clicked = (Player) target;
 
         if (!this.plugin.getConfig().getStringList("config.enabled_worlds").contains(clicker.getWorld().getKey().toString())) {
             return;
