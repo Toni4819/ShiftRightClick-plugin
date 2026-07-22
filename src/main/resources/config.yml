@@ -16,7 +16,13 @@ config:
     - minecraft:the_nether
     - minecraft:the_end
 
+  #Commands executed by the server
   #You can use variable %player_clicker% and %player_clicked%
-  commands:
-    - command1
-    - command2
+  server_ commands:
+    - server1
+    - server2
+  #Commands executed by the player
+  #You can use variable %player_clicker% and %player_clicked%
+  player_ commands:
+    - player1
+    - player2
